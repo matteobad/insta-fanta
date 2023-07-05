@@ -1,7 +1,6 @@
-import "./src/env.mjs";
-import "@acme/api/src/env.mjs";
+// import "./src/env.mjs";
+// import "@acme/api/src/env.mjs";
 
-import withMDX from "@next/mdx";
 
 /** @type {import("next").NextConfig} */
 const config = {
@@ -10,7 +9,6 @@ const config = {
   transpilePackages: ["@acme/api", "@acme/db"],
   pageExtensions: ["ts", "tsx", "mdx"],
   experimental: {
-    mdxRs: true,
     serverActions: true,
   },
   // modularizeImports: {
@@ -24,4 +22,4 @@ const config = {
   typescript: { ignoreBuildErrors: true },
 };
 
-export default withMDX()(config);
+export default config;

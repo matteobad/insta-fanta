@@ -1,7 +1,8 @@
 import { Suspense } from "react";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { auth } from "@clerk/nextjs";
+
+// import { auth } from "@clerk/nextjs";
 
 import { buttonVariants } from "@acme/ui/button";
 import * as Icons from "@acme/ui/icons";
@@ -37,7 +38,9 @@ export default function MarketingLayout(props: { children: ReactNode }) {
 }
 
 function DashboardLink() {
-  const { userId, orgId } = auth();
+  // const { userId, orgId } = auth();
+  const userId = "bad";
+  const orgId = "badget";
 
   if (!userId) {
     return (

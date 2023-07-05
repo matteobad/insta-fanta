@@ -156,9 +156,6 @@ importers:
       '@hookform/resolvers':
         specifier: ^3.1.1
         version: 3.1.1(react-hook-form@7.45.1)
-      '@next/mdx':
-        specifier: ^13.4.8
-        version: 13.4.8
       '@t3-oss/env-nextjs':
         specifier: ^0.6.0
         version: 0.6.0(typescript@5.1.6)(zod@3.21.4)
@@ -207,6 +204,9 @@ importers:
       react-image-crop:
         specifier: ^10.1.5
         version: 10.1.5(react@18.2.0)
+      react-insta-stories:
+        specifier: ^2.6.1
+        version: 2.6.1(react@18.2.0)
       react-wrap-balancer:
         specifier: ^1.0.0
         version: 1.0.0(react@18.2.0)
@@ -3954,20 +3954,6 @@ packages:
     resolution: {integrity: sha512-cmfVHpxWjjcETFt2WHnoFU6EmY69QcPJRlRNAooQlNe53Ke90vg1Ci/dkPffryJZaxxiRziP9bQrV8lDVCn3Fw==}
     dependencies:
       glob: 7.1.7
-    dev: false
-
-  /@next/mdx@13.4.8:
-    resolution: {integrity: sha512-8h0mjPlSKC/KpREJOVhVht6cjXDp5oGBiJw6lYVbRBlFcGSLEt4aehHw8y/aZ2a5o2SThAjh5QOlVbeCz2N1ug==}
-    peerDependencies:
-      '@mdx-js/loader': '>=0.15.0'
-      '@mdx-js/react': '>=0.15.0'
-    peerDependenciesMeta:
-      '@mdx-js/loader':
-        optional: true
-      '@mdx-js/react':
-        optional: true
-    dependencies:
-      source-map: 0.7.4
     dev: false
 
   /@next/swc-darwin-arm64@13.4.8:
@@ -12418,6 +12404,14 @@ packages:
       react: '>=16.13.1'
     dependencies:
       clsx: 1.2.1
+      react: 18.2.0
+    dev: false
+
+  /react-insta-stories@2.6.1(react@18.2.0):
+    resolution: {integrity: sha512-JsUozczN5FO97ski6LFxxU03NNy5PspD5e1yrRZ2oXJzoAKw2RP3pg3N+LPb9lU1w2LhX/66YAPC3/TpRa3Udg==}
+    peerDependencies:
+      react: '>=16.8.2'
+    dependencies:
       react: 18.2.0
     dev: false
 
